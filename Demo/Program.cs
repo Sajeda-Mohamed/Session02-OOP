@@ -37,10 +37,15 @@ namespace Demo
             //Note["Mona"] = 999;
             //Console.WriteLine(Note["Mona"]);
 
-            for (int i = 0; i < Note.Size; i++)
-            {
-                Console.WriteLine(Note[i]);
-            }
+            //for (int i = 0; i < Note.Size; i++)
+            //{
+            //    Console.WriteLine(Note[i]);
+            //}
+            #endregion
+
+            #region Class
+            //Car C01 = new Car(10);
+            //Console.WriteLine(C01.ToString());
             #endregion
         }
     }
