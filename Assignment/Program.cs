@@ -49,6 +49,20 @@
             //HiringDate hiringDate = new HiringDate(4, 1, 2025);
             //Console.WriteLine(hiringDate);
             #endregion
+
+            #region Q04-Array Of Employee
+            #region Arrays
+            Employee[] EmpArr = new Employee[3];
+            EmpArr[0] = new Employee(1, "Sajeda", 5000, Employee.Role.Guest, Employee.Gender.F, new HiringDate(2,5,2020));
+            EmpArr[1] = new Employee(2, "Sally", 5000, Employee.Role.DBA, Employee.Gender.F, new HiringDate(2,5,2020));
+            EmpArr[2] = new Employee(3, "Sara", 5000, Employee.Role.Secretary, Employee.Gender.F, new HiringDate(2,5,2020));
+
+            foreach (var item in EmpArr)
+            {
+                item.DisplayInformation();
+            }
+            #endregion
+            #endregion
         }
     }
 }
