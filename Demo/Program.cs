@@ -20,6 +20,18 @@ namespace Demo
             employee.Salary = 5000;
             //Console.WriteLine(employee.Salary); 
             #endregion
+
+            #region PhoneBook With Getter, Setter
+            PhoneBook Note = new PhoneBook(3);
+            Note.AddPerson(0, 123, "Sajeda");
+            Note.AddPerson(1, 456, "Sally");
+            Note.AddPerson(2, 789, "Sara");
+
+            int Number = Note.GetNumber("Sara");
+            //Console.WriteLine(Number == -1 ? " Not Found" : Number);
+
+            //Note.SetNumber("Sajeda", 999);
+            #endregion
         }
     }
 }
