@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,9 +12,39 @@ namespace Demo.Encapsulation
         #region Attributes
         int[] Numbers;
         string[] Names;
-        int Size;
+        public int Size { get; set; }
         #endregion
-        
+
+        #region Property
+        public int this[string name]
+        {
+            get
+            {
+                for (int i = 0; i < Names.Length; i++)
+                    if (Names[i] == name)
+                        return Numbers[i];
+                return -1;
+            }
+            set
+            {
+                for (int i = 0; i < Names.Length; i++)
+                    if (Names[i] == name)
+                    {
+                        Numbers[i] = value;
+                        Console.WriteLine($"New Number of {name} is {value}");
+                        break;
+                    }
+            }
+        }
+
+        public string this[int Index]
+        {
+            get
+            {
+                return $"Name is {Names[Index]} and Number is {Numbers[Index]}";
+            }
+        }
+        #endregion
         #region Constractors
         public PhoneBook(int size)
         {

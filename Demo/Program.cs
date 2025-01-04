@@ -32,6 +32,16 @@ namespace Demo
 
             //Note.SetNumber("Sajeda", 999);
             #endregion
+
+            #region PhoneBook with Property [Indexer]
+            //Note["Mona"] = 999;
+            //Console.WriteLine(Note["Mona"]);
+
+            for (int i = 0; i < Note.Size; i++)
+            {
+                Console.WriteLine(Note[i]);
+            }
+            #endregion
         }
     }
 }
