@@ -42,6 +42,13 @@
 
             //Person.CheckOldestPerson(person01, person02, person03);
             #endregion
+
+            #region Q03-Classes Employee and HiringDate
+            //Employee employee = new Employee(1, 5000, "Sajeda");
+            //employee.PrintSalary();
+            //HiringDate hiringDate = new HiringDate(4, 1, 2025);
+            //Console.WriteLine(hiringDate);
+            #endregion
         }
     }
 }
